@@ -1,0 +1,38 @@
+<html>
+<head>
+    <body>
+         <p id="result">Submit Below.</p>
+    <title>Form</title>
+    <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="" required>
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="" required>
+  <br>
+        Address:<br>
+        <input type="text" name="address" value="" required>
+        <br>
+        
+        Gender:<br>
+        <input type="radio" name="Male" name="female" value="" required>
+        <br>
+       
+<button type="button" onclick='document.getElementById("result").innerHTML="Submission Noted"'>Submit</button>
+
+    </form>    
+    </body> 
+</head>
+</html>
+
+
+
+<form action="/action_page.php" method="get">
+  <input list="BloodGroup" name="BloodGroup">
+  <datalist id="BloodGroup">
+    <option value="O+ve">
+    <option value="A+ve">
+    <option value="B+ve">
+    <option value="Others">
+  </datalist>
+</form>

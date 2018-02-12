@@ -1,0 +1,47 @@
+<!Doctype html>
+<html> 
+    <title>Login</title>
+    <h1 align="center">LOGIN</h1>
+<script src="angular.min.js"></script>
+ 
+<body ng-app="firstapp"> 
+    <div  ng-controller="myctrl" ng-show="login"> 
+FirstName:<br>
+<input type="text" ng-model="fname"><br>
+
+Password:<br>
+<input type="password" ng-model="pwd"><br>
+
+<br><button ng-click="sub()">Submit</button>
+    </div>
+    
+    <div ng-controller="mycode" ng-show="home">
+    {{message}}
+    </div>
+<script>
+var app=angular.module('firstapp',[]);
+app.controller('myctrl',function($scope,$rootScope)
+    {
+    $scope.fname="";
+    $scope.pwd="";
+    $rootScope.home=false;
+    $scope.login=true;
+    $scope.sub=function(){
+        
+	if($scope.fname == "admin" && $scope.pwd == "admin"){
+		$scope.login=false;
+		$rootScope.home=true;
+		$rootScope.message = "Welcome to Angularjs"
+	}
+}
+
+});
+
+angular.module('firstapp').controller('mycode',function($scope){
+
+
+});
+        
+    </script>   
+    </body>
+</html>

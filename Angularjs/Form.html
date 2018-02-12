@@ -1,0 +1,64 @@
+<!Doctype html>
+<html> 
+    <title>FORM</title>
+    <h1 align="center">FORM</h1>
+<script src="angular.min.js"></script>
+ 
+<body> 
+   
+<div ng-app="firstapp" ng-controller="myctrl"> 
+FirstName:<br>
+<input type="text" ng-model="fname"><br>
+LastName:<br>
+<input type="text" ng-model="lname"><br>
+Year:<br>
+ <select name="Year" ng-model="yr"> 
+    <option value="I">I</option>
+    <option value="II">II</option>
+    <option value="III">III</option>
+    <option value="IV">IV</option>
+
+  </select>
+  </select><br>
+Gender:<br>
+Male<input type="radio" ng-model="gender" value="male" id="m"><br>
+Female<input type="radio" ng-model="gender" value="female" id="f"><br>
+<br>Address:<br>
+<textarea name="add" rows="3" cols="12" ng-model="add"></textarea><br>
+Email:<br>
+<input type="email" ng-model="id"><br>
+Mobile:<br>
+<input type="number" ng-model="ph"><br>
+    Acceptance above details:<br>
+<input type="checkbox" ng-model="tr"><br>
+<br>
+<button ng-click="sub()">Submit</button>
+<div ng-show="details">
+{{details}}
+    {{dlname}}
+</div> 
+</div>
+<script>
+var app=angular.module('firstapp',[]);
+app.controller('myctrl',function($scope)
+{
+$scope.fname="";
+$scope.lname="";
+$scope.yr=" ";
+$scope.male="m";
+$scope.female="f";
+$scope.add=" ";
+$scope.dob=" ";
+$scope.id=" ";
+$scope.ph=" ";
+$scope.sub=function()
+{
+$scope.details=true;
+return $scope.details =$scope.fname + $scope.lname + $scope.yr + $scope.gender + $scope.dob +$scope.add + $scope.id + $scope.ph;
+}
+    
+});
+        </script>
+   
+</body>
+</html>

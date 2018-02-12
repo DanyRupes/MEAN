@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl"><div><p>First Name:</p>
+<p><input type="text" ng-model="fname"></p>
+<table border="1">
+<tr ng-repeat="x in name">
+<td>{{x}}</td>
+</tr>
+</table>
+<button ng-click="add()">Add</button>
+<button ng-click="remove($ind)">Remove</button></p>
+</div>
+</div>
+<script> 
+var app=angular.module("myApp",[]);
+app.controller("myCtrl",function($scope){
+$scope.name=[];
+$scope.add=function()
+{
+return $scope.name.push($scope.fname);
+};
+$scope.remove=function(ind)
+{
+$scope.name.pop(ind);
+};
+});
+</script>
+</body>
+</html>

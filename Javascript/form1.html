@@ -1,0 +1,59 @@
+
+<html>
+<head lang="en">
+<h1 align="center">FORM</h1 >
+<script type="text/javascript">
+function showMessage(){
+var message =document.getElementById("fnam").value;
+document.getElementById('display_message').innerHTML=message;
+
+
+var message2 =document.getElementById("bd").value;
+display_message.innerHTML=message2;
+
+var message3=document.querySelector('input[name="gender"]:checked').value;
+display_message.innerHTML=message3;
+
+
+var message4 =document.getElementById("add").value;
+display_message.innerHTML=message4;
+
+var message5 =document.getElementById("country").value;
+display_message.innerHTML=message5;
+
+var message6 =document.getElementById("mob").value;
+display_message.innerHTML="First name:"+message +"<br>"+"Date of birth:"+message2+"<br>"+"Gender:"+ message3 + "<br>"+"Address:"+message4+"<br>"+"Country:"+message5+ "<br>"+"Mobile:"+message6;
+}
+
+</script>
+</head>
+
+<body>
+			<label><b>First Name:</b></label>
+			<input type = "text" name = "fname" id="fnam"><br>
+	
+    <label><b>Date Of Birth:</b></label>
+			<input type = "date" name = "bday" id="bd"><br>
+		
+    <label><b>Gender:</b></label><br>
+				<input type= "radio" name= "gender" value= "male" id="m" >MALE<br>
+			<input type= "radio" name="gender" value= "female" id="f">FEMALE<br>
+
+			<label><b>Address</b></label>
+			<br><textarea name="address"cols="30" rows="3" id="add"></textarea><br><br>
+		
+    <label><b>Country</b></label>
+			<br><select id = "country" name= "country">
+				<option value = "Default" selected="">Other</option>
+				<option value = "INDIA">INDIA</option>
+				<option value = "USA">USA</option>
+				<option value = "AUSTRALIA">England</option>
+	
+    </select><br>
+	<br><label><b>Mobile Number:</b></label>
+			<br><input type= "text" name = "mobile" id="mob"><br>
+			<br><input type="submit" onclick="showMessage();" value="submit"/>
+
+<p>Details<span id="display_message"></span></p>
+</body>
+</html>

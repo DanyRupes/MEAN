@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<center>
+REGISTERATION FORM
+</center>
+<title>REGISTERATION FORM</title>
+<body>
+
+<style>
+input
+{
+width=20%
+}
+#source
+{
+background: url(file:///C:/Documents%20and%20Settings/Student/Desktop/dewdrops.jpg) no-repeat;
+padding: 120px;
+ background-size:cover;
+}
+
+input[type=text], select {
+    width: 20%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}<br>
+</style>
+<div id="source">
+<form>
+  First name:<br>
+  <input type="text" name="Firstname" maxlength="5" required>
+
+  <br>
+  Last name:<br>
+  <input type="text" name="Lastname" required>
+<br>
+Address:<br>
+<input type="text" name="Address" required><br>
+Mobile number:<br>
+<input type "number" name="Mobile number" required>
+<br>
+Gender:<br>
+  <input  style="color:blue" type="radio" name="Gender" value="male"> Male<br>
+  <input style="color:blue" type="radio" name="Gender" value="female"> Female<br>
+  <input style="color:blue" type="radio" name="Gender" value="other"> Other
+<br>
+Country:<br>
+ <select name="Country">
+    <option value="Africa">Africa</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="India">India</option>
+    <option value="Srilanka">Srilanka</option>
+
+  </select>
+  </select><br>
+<button type="button" onclick="alert('Registered successfully!')">Submit</button>
+  
+</form> 
+
+</body>
+</html>
