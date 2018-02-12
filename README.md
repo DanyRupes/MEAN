@@ -1,2 +1,2 @@
 # MEAN
-MEAN projects
+MEAN projects are stored here ...which are trained by college 
