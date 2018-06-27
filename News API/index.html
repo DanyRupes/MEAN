@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>News Broadcast</title>
+</head>
+<body class="container-FLUID" style="display:flex;justify-content: space-between;">
+    <div class="items" style="width: 500px;width: 350px;height: 200px;margin: 50px 50px" >
+
+        <form action="/news" method="POST">
+        <input  name="name" type="text" id="sEarch" ><br><br>
+     <button  class="btn btn-info btn-block" type="submit" value="1234"> News</button>
+    </form><b><br></b>
+    <div class="card" style="margin-top: 20px;background-color: violet;padding: 45px;align-content: center;">
+        <p id="g_news"> </p>
+        <p id="auth"></p>
+        <p id="titLe"></p>
+        <p id="url"></p>
+        </div>
+        
+</div>
+
+</body>
+</html>

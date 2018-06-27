@@ -1,0 +1,245 @@
+body{
+    background-color:#341f97;
+
+}
+
+.topPara {
+    font-size: 16px;
+    padding: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image{
+    width: 150px;
+}
+.border{
+    border-color:transparent;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 49%;
+}
+hr{
+    width: 40%; 
+    color: black;
+    height: 3px;
+    background-color:black; 
+    align-self: center;
+}
+.boxOffice{
+    margin: 30dp;
+    display: flex;
+    align-items: column;
+    background-color: #f1f1f1;
+    flex-wrap: wrap;
+    
+
+}
+.boxOffice > div {
+    width: 200px;
+    margin: 100px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.contactForm .left {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+}
+.contactForm .left .form1 {
+    width: 100%;
+    color: cornsilk;
+}
+.contactForm .left .form1 .name {
+    background-color: #ffffff;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    line-height: 90px;
+    border-radius: 0;
+    border: none;
+    margin-top: 13px;
+}
+.contactForm .left .form1 .name:focus{
+    outline: none;
+    color: #5f27cd;
+}
+.contactForm .left .form1 .email {
+    color: black;
+    width:90%;
+    line-height: 90px;
+    border-radius: 0;
+    border: none;
+    font-size: 20px;
+}
+.contactForm .left .form1 .email:focus{
+    outline: none;
+    color: #5f27cd;
+}
+.contactForm .left .form1 .number {
+    color: black;
+    width: 90%;
+    line-height:90px;
+    border-radius: 0;
+    border: none;
+    font-size: 20px;
+}
+.contactForm .left .form1 .number:focus{
+    outline:none;
+    color: #5f27cd;
+}
+.contactForm .left .form1 .message {
+    color: black;
+    width: 90%;
+    line-height: 40px;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    color: #0bf;
+}
+.contactForm .left .form1 .message:focus{
+    outline:none;
+    color: #5f27cd;
+}
+
+.contactForm .left .form1 .button {
+    width: 80%;
+    background: #76B3FA;
+   
+    color: black;
+    text-decoration: none;
+    font-size: 1.45em;
+    height:  40px;  
+    font-weight: 500;
+  }
+
+  .contactForm .left .form1 .button:hover { 
+    -webkit-animation: hover 1200ms linear 2 alternate;
+    animation: hover 1200ms linear 2 alternate;
+  }
+  
+
+  .contactForm .left .form1 .button:active {
+    -webkit-animation: active 1200ms ease 1 alternate;
+    animation: active 1200ms ease 1 alternate; 
+    background: #5F9BE0;
+    font-style: oblique;
+  }
+.contactForm .right {
+    width: 50%;
+    display: flex;
+    /* background-color: greenyellow;     */
+    padding: 30px;  
+}
+
+.right p {
+    /* background-color: fuchsia; */
+    font-weight: 530;
+    font-family: Didot, serif;
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    padding-bottom: 0;
+    padding-top: -10px;
+}
+.about {
+    width: 100%;
+    height: 130px;
+    background-color:#222f3e;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.about .aboutPage {
+    width: 50%;
+    color: white;
+    align-items: flex-start;
+}
+.about .aboutPage .words {
+    align-items: center;
+    padding: 20px 40px;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .aboutWeb {
+    width: 50%;
+    background-color: #273c75;
+    align-self: stretch;
+    
+}
+
+.aboutWeb .words {
+
+    display: flex;
+    justify-content: center;
+    margin: 2.4% 2.4%;
+}
+/* .aboutWeb .words::after{
+    content: "aegadf";
+    display: block;
+} */
+.words h3{
+    color: black;
+    font-weight: bold;  
+    font-family: 'Courier New', Courier, monospace;
+}
+.words a {
+    color: #ffffff;
+}
+.words p {
+    font-style: italic;
+    font-weight: 100px;
+}
+.aboutWeb ul {  
+    width: 100%;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+   
+}
+.aboutWeb ul li {
+    width: 50px;
+    height: 35px;
+    color: white;
+}
+.aboutWeb ul li a {
+    color: white;
+    
+}
+.aboutWeb ul li a :hover {
+    color: blue;
+}
+
+footer {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+footer p{
+    color: lemonchiffon;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer a{
+    
+    color: slateblue;
+}
+
+
+
+/* flex-grow, flex-shrink and flex-basis together
+.flex-item:nth-of-type(1) {
+  flex: 1 0 100px;
+} */
